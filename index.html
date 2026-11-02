@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Floe Shove</title>
+  <meta name="description" content="Walrus sumo on drifting ice floes. Four local players, last one on the ice wins.">
+  <link rel="icon" href="assets/icon.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="game" width="1280" height="720" tabindex="0" aria-label="Floe Shove"></canvas>
+  <script>
+    window.__FLOE_ERRORS__ = [];
+    window.addEventListener("error", function (event) {
+      window.__FLOE_ERRORS__.push(String(event.message || event.error || "error"));
+    });
+    window.addEventListener("unhandledrejection", function (event) {
+      window.__FLOE_ERRORS__.push(String(event.reason || "rejection"));
+    });
+  </script>
+  <script type="module" src="src/ui/main.js"></script>
+</body>
+</html>

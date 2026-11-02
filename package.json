@@ -1,0 +1,11 @@
+{
+  "name": "floeshove",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Walrus sumo on drifting ice floes.",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "start": "python3 server.py"
+  }
+}
